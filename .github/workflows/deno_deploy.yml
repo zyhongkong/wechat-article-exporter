@@ -28,9 +28,9 @@ jobs:
       - run: yarn build
         env:
           NITRO_PRESET: deno_deploy
-      - name: weixin-wenzhang-daochu
+      - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: wedown12345691232323123-23
+          project: weixin-wenzhang-daochu
           entrypoint: server/index.ts
           root: .output
